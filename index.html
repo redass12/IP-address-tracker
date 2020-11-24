@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</head>
+<body>
+<!-- Global container  -->
+  <div class="container">
+
+
+    <div class="serach-container">
+        <!-- Title -->
+    <h2 class="title">IP Adress Tracker</h2>
+    <!-- Seach field -->
+    <div class="search">
+      <input text="text" id="search" class="search-input"/>
+      <button class="search-btn" id="btn">></button>
+    </div>
+    </div>
+
+    <!-- Information about the IP address -->
+    <div class=" info-ip">
+
+      <!-- ip adrress -->
+      <div class="column" >
+        <span>IP Adress</span>
+        <p id="ip"></p>
+      </div>
+
+      <!-- location -->
+      <div class="column" >
+        <span>Location</span>
+        <p id="location"></p>
+      </div>
+
+      <!-- TimeZone -->
+      <div class="column " >
+        <span>timezone</span>
+        <p id="timezone"></p>
+      </div>
+
+      <!-- ISP -->
+      <div class="column " >
+        <span>isp</span>
+        <p id="isp"></p>
+      </div>
+
+    </div>
+    <div class="cart" id="cart">
+
+    </div>
+  </div>
+
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  
+
+   <script src="./js/script.js"></script>
+</body>
+</html>
